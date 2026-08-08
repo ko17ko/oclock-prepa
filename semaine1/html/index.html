@@ -6,6 +6,7 @@
     <meta name="description" content="Page de présentation de [Channel NEMTSERE A RIKAM], futur développeur web">
     <title>[Channel NEMTSERE A RIKAM] - développeur web en devenir</title>
     <link rel="stylesheet" href="../css/style.css">
+    <nav arial-label="Navigation principale">
 </head>
 
 <body>
@@ -59,7 +60,8 @@
             <h2>Me contacter</h2>
             <form action="#" method="POST">
                 <label for="email">Email :</label>
-                <input type="email" id="email" name="email" required placeholder="votre@email.com">
+                <input type="email" id="email" name="email" required placeholder="votre@email.com" aria-required="true" aria-describedby="email-help">
+                <small id="email-help">Vos données restent confidentielles.</small>
                 <label for="message">Message :</label>
                 <textarea name="message" id="message" required minlength="10" rows="5"></textarea>
 
